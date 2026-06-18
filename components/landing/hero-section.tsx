@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   ArrowRight,
   Binary,
@@ -126,7 +126,6 @@ export default function HeroSection() {
             </button>
           </form>
 
-     
           <div className="pt-4 flex flex-wrap justify-center lg:justify-start items-center gap-6 text-muted-foreground text-sm">
             <div className="flex items-center gap-1.5">
               <Users className="w-4 h-4 text-primary" />
@@ -147,7 +146,6 @@ export default function HeroSection() {
           </div>
         </div>
 
-        
         <div
           className={`lg:col-span-5 relative transition-all duration-1000 delay-200 ease-out ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-12"
@@ -192,7 +190,7 @@ export default function HeroSection() {
                 </p>
               </div>
 
-              <div className="mt-4 pt-4 border-t border-border flex items-center gap-4 text-[11px] text-muted-foreground">
+              <div className="mt-4 pt-4 border-t border-border flex items-center gap-4 text-xs text-muted-foreground">
                 <span className="flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5 text-primary" /> Instant
                   Book

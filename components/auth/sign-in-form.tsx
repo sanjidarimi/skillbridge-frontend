@@ -57,7 +57,7 @@ export function SignInForm() {
         <div className="text-right">
           <a
             href="#"
-            className="text-[11px] text-muted-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
+            className="text-xs text-muted-foreground hover:text-primary transition-colors underline-offset-4 hover:underline"
           >
             Forgot password?
           </a>

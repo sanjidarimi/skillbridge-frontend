@@ -1,5 +1,4 @@
 "use client";
-
 import { handleSignUp } from "@/app/actions/auth";
 import { Button } from "@/components/ui/button";
 import { FloatingInput } from "@/components/ui/floating-input";
@@ -22,7 +21,12 @@ export function SignUpForm() {
           {state.message}
         </div>
       )}
-
+      <div className="space-y-2 pt-1">
+        <label className="text-xs font-medium text-muted-foreground">
+          Select your account profile
+        </label>
+        <RoleSelector value={role} onChange={setRole} />
+      </div>
       <FloatingInput
         id="signup-name"
         name="name"
@@ -64,13 +68,6 @@ export function SignUpForm() {
           </button>
         }
       />
-
-      <div className="space-y-2 pt-1">
-        <label className="text-xs font-medium text-muted-foreground">
-          Select your account profile
-        </label>
-        <RoleSelector value={role} onChange={setRole} />
-      </div>
 
       <Button
         type="submit"

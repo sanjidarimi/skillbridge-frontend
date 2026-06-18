@@ -1,11 +1,10 @@
+/* eslint-disable react/no-children-prop */
+import SubLayout from "@/components/sublayout";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-import Navbar from "@/components/global/Navbar";
 import { ThemeProvider } from "next-themes";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Footer from "@/components/global/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -20,10 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={cn("h-full", "antialiased", "font-sans", inter.variable)}
-    >
+    <html lang="en" className={cn("h-full", "antialiased", inter.variable)}>
       <body className="min-h-full flex flex-col">
         <ThemeProvider
           attribute="class"
@@ -31,10 +27,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {" "}
-          <Navbar />
-          <section className="min-h-screen">{children}</section>
-          <Footer/>
+          <SubLayout children={children} />
         </ThemeProvider>
       </body>
     </html>
