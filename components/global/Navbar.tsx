@@ -7,21 +7,21 @@ import { ModeToggle } from "../landing/mode-toggle";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const navigate = useNavigate();
+
   const handleAuthButton = () => {
-    // navigate("/auth/sign-up");
+   
   };
-  // Navigation links data
+
   const navLinks = [
     { href: "#", label: "Features" },
-    { href: "#", label: "Pricing" },
+    { href: "/tutors", label: "Tutors" },
     { href: "#", label: "About" },
     { href: "#", label: "Contact" },
   ];
 
   return (
     <header className="bg-background backdrop-blur-sm sticky top-0 z-50 w-full border-b border-border">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <div className="flex items-center justify-between h-16">
           {/* Logo Section */}
           <div className="shrink-0">

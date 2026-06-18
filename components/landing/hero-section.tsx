@@ -80,8 +80,8 @@ export default function HeroSection() {
     CATEGORIES.find((cat) => cat.id === activeTab) || CATEGORIES[0];
 
   return (
-    <section className="relative min-h-[90vh] bg-background flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 overflow-hidden transition-colors duration-300">
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+    <section className="relative bg-background flex items-center justify-center py-12 px-4 overflow-hidden transition-colors duration-300">
+      <div className="container mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
         <div
           className={`lg:col-span-7 space-y-6 text-center lg:text-left transition-all duration-1000 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"

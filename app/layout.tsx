@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={cn("h-full", "antialiased", inter.variable)}>
-      <body className="min-h-full flex flex-col">
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
