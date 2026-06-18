@@ -1,15 +1,17 @@
-import AboutPlatform from "./home/_components/about-platform";
-import BestCourses from "./home/_components/best-courses";
-import FAQSection from "./home/_components/faq-section";
-import HeroSection from "./home/_components/hero-section";
-import StatsSection from "./home/_components/stats";
+import AboutPlatform from "@/components/landing/about-platform";
+import BestCourses from "@/components/landing/best-courses";
+import FAQSection from "@/components/landing/faq-section";
+import HeroSection from "@/components/landing/hero-section";
+import StatsSection from "@/components/landing/stats";
 
 export default function Home() {
-  return <>
-  <HeroSection/>
-  <BestCourses/>
-  <AboutPlatform/>
-  <StatsSection/>
-  <FAQSection/>
-  </>;
+  return (
+    <>
+      <HeroSection />
+      <BestCourses />
+      <AboutPlatform />
+      <StatsSection />
+      <FAQSection />
+    </>
+  );
 }

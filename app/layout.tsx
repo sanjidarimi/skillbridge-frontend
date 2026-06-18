@@ -1,10 +1,11 @@
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
+import Navbar from "@/components/global/Navbar";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
-import Footer from "./home/_components/Footer";
-import Navbar from "./home/_components/Navbar";
-import { ThemeProvider } from "./home/_components/theme-provider";
+import Footer from "@/components/global/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -30,9 +31,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {" "}
           <Navbar />
           <section className="min-h-screen">{children}</section>
-          <Footer />
+          <Footer/>
         </ThemeProvider>
       </body>
     </html>
