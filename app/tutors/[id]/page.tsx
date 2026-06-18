@@ -262,7 +262,7 @@ export default function TutorProfilePage({ params }: PageProps) {
         </div>
       </div>
 
-      {/* Confirmation Modal Overlay */}
+
       {isModalOpen && selectedSlot && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs transition-opacity animate-in fade-in-20"
@@ -270,7 +270,7 @@ export default function TutorProfilePage({ params }: PageProps) {
           aria-modal="true"
         >
           <div className="relative w-full max-w-md bg-card border border-border rounded-xl p-6 shadow-2xl overflow-hidden transform animate-in zoom-in-95 duration-200 text-center">
-            {/* Modal Exit Trigger Button */}
+   
             {!bookingSuccess && (
               <button
                 type="button"
@@ -283,7 +283,7 @@ export default function TutorProfilePage({ params }: PageProps) {
             )}
 
             {!bookingSuccess ? (
-              // Stage A: Core Setup & Acceptance Configuration View
+    
               <div>
                 <div className="w-12 h-12 rounded-full bg-primary/10 text-primary mx-auto flex items-center justify-center mb-4">
                   <Calendar className="w-6 h-6" />
@@ -348,7 +348,6 @@ export default function TutorProfilePage({ params }: PageProps) {
                 </div>
               </div>
             ) : (
-              // Stage B: Confirmation Success Message Screen
               <div className="py-6 animate-in fade-in zoom-in-95 duration-300">
                 <div className="w-14 h-14 rounded-full bg-emerald-500/10 text-emerald-500 mx-auto flex items-center justify-center mb-4">
                   <CheckCircle2 className="w-8 h-8" />

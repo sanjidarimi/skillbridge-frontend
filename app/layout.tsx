@@ -1,5 +1,3 @@
-/* eslint-disable react/no-children-prop */
-import SubLayout from "@/components/sublayout";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
@@ -27,7 +25,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <SubLayout children={children} />
+          {children}
         </ThemeProvider>
       </body>
     </html>
